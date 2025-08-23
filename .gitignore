@@ -6,6 +6,13 @@
 /ETicaretClient/node_modules/
 /ETicaretClient/dist/
 
+# IDE / VS
+**/.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
 # Genel
 .vscode/
 .idea/
