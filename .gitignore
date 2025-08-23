@@ -1,0 +1,12 @@
+# ASP.NET
+/ETicaretAPI/bin/
+/ETicaretAPI/obj/
+
+# Angular
+/ETicaretClient/node_modules/
+/ETicaretClient/dist/
+
+# Genel
+.vscode/
+.idea/
+*.log
