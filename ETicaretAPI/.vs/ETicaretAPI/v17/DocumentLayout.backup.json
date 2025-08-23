@@ -1,0 +1,69 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\gokde\\Desktop\\ETicaretUygulamasi\\ETicaretAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{56EFD5A7-66F5-4F0E-BB66-CC4EF8364918}|Infrastructure\\ETicaretAPI.Infrastructure\\ETicaretAPI.Infrastructure.csproj|c:\\users\\gokde\\desktop\\eticaretuygulamasi\\eticaretapi\\infrastructure\\eticaretapi.infrastructure\\services\\fileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56EFD5A7-66F5-4F0E-BB66-CC4EF8364918}|Infrastructure\\ETicaretAPI.Infrastructure\\ETicaretAPI.Infrastructure.csproj|solutionrelative:infrastructure\\eticaretapi.infrastructure\\services\\fileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29941648-5E12-4553-9BD0-EA1CC1F9FFAD}|Core\\ETicaretAPI.Application\\ETicaretAPI.Application.csproj|c:\\users\\gokde\\desktop\\eticaretuygulamasi\\eticaretapi\\core\\eticaretapi.application\\services\\ifileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29941648-5E12-4553-9BD0-EA1CC1F9FFAD}|Core\\ETicaretAPI.Application\\ETicaretAPI.Application.csproj|solutionrelative:core\\eticaretapi.application\\services\\ifileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C54C3883-B0A0-4DE0-826E-580A9531DD6C}|Presentation\\ETicaretAPI.API\\ETicaretAPI.API.csproj|c:\\users\\gokde\\desktop\\eticaretuygulamasi\\eticaretapi\\presentation\\eticaretapi.api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C54C3883-B0A0-4DE0-826E-580A9531DD6C}|Presentation\\ETicaretAPI.API\\ETicaretAPI.API.csproj|solutionrelative:presentation\\eticaretapi.api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 262,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FileService.cs",
+              "DocumentMoniker": "C:\\Users\\gokde\\Desktop\\ETicaretUygulamasi\\ETicaretAPI\\Infrastructure\\ETicaretAPI.Infrastructure\\Services\\FileService.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\ETicaretAPI.Infrastructure\\Services\\FileService.cs",
+              "ToolTip": "C:\\Users\\gokde\\Desktop\\ETicaretUygulamasi\\ETicaretAPI\\Infrastructure\\ETicaretAPI.Infrastructure\\Services\\FileService.cs",
+              "RelativeToolTip": "Infrastructure\\ETicaretAPI.Infrastructure\\Services\\FileService.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAgwDEAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T11:09:30.937Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IFileService.cs",
+              "DocumentMoniker": "C:\\Users\\gokde\\Desktop\\ETicaretUygulamasi\\ETicaretAPI\\Core\\ETicaretAPI.Application\\Services\\IFileService.cs",
+              "RelativeDocumentMoniker": "Core\\ETicaretAPI.Application\\Services\\IFileService.cs",
+              "ToolTip": "C:\\Users\\gokde\\Desktop\\ETicaretUygulamasi\\ETicaretAPI\\Core\\ETicaretAPI.Application\\Services\\IFileService.cs",
+              "RelativeToolTip": "Core\\ETicaretAPI.Application\\Services\\IFileService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T10:59:58.766Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "C:\\Users\\gokde\\Desktop\\ETicaretUygulamasi\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "Presentation\\ETicaretAPI.API\\Controllers\\ProductsController.cs",
+              "ToolTip": "C:\\Users\\gokde\\Desktop\\ETicaretUygulamasi\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "Presentation\\ETicaretAPI.API\\Controllers\\ProductsController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAIwBkAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-24T13:58:03.604Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

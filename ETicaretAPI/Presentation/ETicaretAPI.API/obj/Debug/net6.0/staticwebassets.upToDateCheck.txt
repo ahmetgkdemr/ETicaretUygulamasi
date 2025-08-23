@@ -1,0 +1,13 @@
+wwwroot\resource\product-images\4.jpg
+wwwroot\resource\product-images\4-2.jpg
+wwwroot\resource\product-images\4-3.jpg
+wwwroot\resource\product-images\delete.png
+wwwroot\resource\product-images\delete-2.png
+wwwroot\resource\product-images\delete-3.png
+wwwroot\resource\product-images\IMG_6506-2.jpg
+wwwroot\resource\product-images\IMG_6506-3.jpg
+wwwroot\resource\product-images\IMG6506.jpg
+wwwroot\resource\product-images\WhatsApp-Image-2025-05-13-at-15-22-54.jpeg
+wwwroot\resource\product-images\YOGII (1)-2.png
+wwwroot\resource\product-images\YOGII (1)-3.png
+wwwroot\resource\product-images\YOGII-1.png
