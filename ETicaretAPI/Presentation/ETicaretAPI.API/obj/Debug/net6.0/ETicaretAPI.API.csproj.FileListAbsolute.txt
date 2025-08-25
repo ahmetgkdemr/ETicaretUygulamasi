@@ -53,3 +53,4 @@ C:\Users\gokde\Desktop\ETicaretUygulamasi\ETicaretAPI\Presentation\ETicaretAPI.A
 C:\Users\gokde\Desktop\ETicaretUygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\obj\Debug\net6.0\rjsmrazor.dswa.cache.json
 C:\Users\gokde\Desktop\ETicaretUygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\obj\Debug\net6.0\rjsmcshtml.dswa.cache.json
 C:\Users\gokde\Desktop\ETicaretUygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\obj\Debug\net6.0\staticwebassets.build.json.cache
+C:\Users\gokde\Desktop\ETicaretUygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\obj\Debug\net6.0\ETicaretAPI.API.sourcelink.json

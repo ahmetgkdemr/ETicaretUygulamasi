@@ -22,6 +22,11 @@ namespace ETicaretAPI.Persistence.Contexts
         public DbSet <Customer> Customers{ get; set; }   // Müşteri sınıfını temsil etmek için kullanılır veri tabanında
         public DbSet <Order> Orders { get; set; }        // Sipariş sınıfını temsil etmek için kullanılır veri tabanı tablosunda 
 
+        public DbSet<Domain.Entities.File> Files { get; set; }
+        public DbSet <ProductImageFile> ProductImageFiles { get; set; }
+        public DbSet<InvoiceFile> InvoiceFiles { get; set; }
+
+
         public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
         {
             var datas = ChangeTracker.Entries<BaseEntity>();
