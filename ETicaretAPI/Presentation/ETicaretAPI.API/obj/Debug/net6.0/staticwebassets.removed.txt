@@ -1,0 +1,17 @@
+C:\Users\gokde\Desktop\ETicaretUygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\wwwroot\resource\file\1398917circleclosecrossincorrectinvalidicon.png
+C:\Users\gokde\Desktop\ETicaretUygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\wwwroot\resource\file\Adsiz-tasarim.png
+C:\Users\gokde\Desktop\ETicaretUygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\wwwroot\resource\file\delete.png
+C:\Users\gokde\Desktop\ETicaretUygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\wwwroot\resource\file\edit.png
+C:\Users\gokde\Desktop\ETicaretUygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\wwwroot\resource\file\edit-2.png
+C:\Users\gokde\Desktop\ETicaretUygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\wwwroot\resource\file\e-ticaretten-yazilimciya-yumusak-bir-gecis-kapak-fotografi-istiyorum-koyu-tema-olsun-sadece-olsun-canli-olmasin.jpg
+C:\Users\gokde\Desktop\ETicaretUygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\wwwroot\resource\file\Gorev-5---ER-Diyagrami.png
+C:\Users\gokde\Desktop\ETicaretUygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\wwwroot\resource\file\Gorev-6----Veritabani-Diyagrami.png
+C:\Users\gokde\Desktop\ETicaretUygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\wwwroot\resource\file\RestaurantCafeActivityDiagram.png
+C:\Users\gokde\Desktop\ETicaretUygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\wwwroot\resource\file\WhatsApp-Image-2025-03-14-at-16-11-33.jpeg
+C:\Users\gokde\Desktop\ETicaretUygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\wwwroot\resource\file\WhatsApp-Image-2025-05-13-at-15-22-54.jpeg
+C:\Users\gokde\Desktop\ETicaretUygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\wwwroot\resource\invoices\Gorev-6----Veritabani-Diyagrami.png
+C:\Users\gokde\Desktop\ETicaretUygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\wwwroot\resource\invoices\ProfessionalUMLActivityDiagram-1.png
+C:\Users\gokde\Desktop\ETicaretUygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\wwwroot\resource\invoices\RestaurantCafeActivityDiagram.png
+C:\Users\gokde\Desktop\ETicaretUygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\wwwroot\resource\product-images\gradient1000800.png
+C:\Users\gokde\Desktop\ETicaretUygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\wwwroot\resource\product-images\mypalette-1.png
+C:\Users\gokde\Desktop\ETicaretUygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\wwwroot\resource\product-images\mypalette-2.png

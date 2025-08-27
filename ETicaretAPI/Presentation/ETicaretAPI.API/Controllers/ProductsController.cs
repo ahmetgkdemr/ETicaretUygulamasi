@@ -18,17 +18,36 @@ namespace ETicaretAPI.API.Controllers
         private readonly IWebHostEnvironment _webHostEnvironment;
         readonly private IFileService _fileService;
 
+        readonly private IFileReadRepository _fileReadRepository;
+        readonly private IFileWriteRepository _fileWriteRepository;
+        readonly private IProductImageFileReadRepository _productImageFileReadRepository;
+        readonly private IProductImageFileWriteRepository _productImageFileWriteRepository;
+        readonly private IInvoiceFileReadRepository _invoiceFileReadRepository;
+        readonly private IInvoiceFileWriteRepository _invoiceFileWriteRepository;
+
 
         public ProductsController(
             IProductWriteRepository productWriteRepository,
             IProductReadRepository productReadRepository,
             IWebHostEnvironment webHostEnvironment,
-            IFileService fileService)
+            IFileService fileService,
+            IFileReadRepository fileReadRepository,
+            IFileWriteRepository fileWriteRepository,
+            IProductImageFileReadRepository productImageFileReadRepository,
+            IProductImageFileWriteRepository productImageFileWriteRepository,
+            IInvoiceFileReadRepository invoiceFileReadRepository,
+            IInvoiceFileWriteRepository invoiceFileWriteRepository)
         {
             _productWriteRepository = productWriteRepository;
             _productReadRepository = productReadRepository;
             this._webHostEnvironment = webHostEnvironment;
             _fileService = fileService;
+            _fileReadRepository = fileReadRepository;
+            _fileWriteRepository = fileWriteRepository;
+            _productImageFileReadRepository = productImageFileReadRepository;
+            _productImageFileWriteRepository = productImageFileWriteRepository;
+            _invoiceFileReadRepository = invoiceFileReadRepository;
+            _invoiceFileWriteRepository = invoiceFileWriteRepository;
         }
 
         [HttpGet]
@@ -93,9 +112,26 @@ namespace ETicaretAPI.API.Controllers
         [HttpPost("[action]")]
         public async Task<IActionResult> Upload()
         {
-            await _fileService.UploadAsync("resource/product-images",Request.Form.Files);
-            //wwwroot/resource/product-images
-            //_fileService.UploadAsync()   burda kaldın bir şeyler ekle 24.05.2025
+            var datas = await _fileService.UploadAsync("resource/file",Request.Form.Files);
+
+            //await _productImageFileWriteRepository.AddRangeAsync(datas.Select(d => new ProductImageFile()
+            //{
+            //    FileName = d.fileName,
+            //    Path = d.path
+            //}).ToList());
+            //await _productImageFileWriteRepository.SaveAsync();
+
+            await _fileWriteRepository.AddRangeAsync(datas.Select(d => new Domain.Entities.File()
+            {
+                FileName = d.fileName,
+                Path = d.path
+            }).ToList());
+            await _fileWriteRepository.SaveAsync();
+
+            //var datas2= _fileReadRepository.GetAll();
+            //var datas3=_invoiceFileReadRepository.GetAll();
+            //var datas4= _productImageFileReadRepository.GetAll();
+
             return Ok();
         }
 

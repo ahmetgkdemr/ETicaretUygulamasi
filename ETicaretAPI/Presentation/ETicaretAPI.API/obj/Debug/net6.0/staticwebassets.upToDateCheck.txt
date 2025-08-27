@@ -1,14 +1,17 @@
-wwwroot\resource\product-images\4.jpg
-wwwroot\resource\product-images\4-2.jpg
-wwwroot\resource\product-images\4-3.jpg
-wwwroot\resource\product-images\delete.png
-wwwroot\resource\product-images\delete-2.png
-wwwroot\resource\product-images\delete-3.png
-wwwroot\resource\product-images\IMG_6506-2.jpg
-wwwroot\resource\product-images\IMG_6506-3.jpg
-wwwroot\resource\product-images\IMG6506.jpg
-wwwroot\resource\product-images\WhatsApp Image 2025-05-13 at 15.22.54-2.jpeg
-wwwroot\resource\product-images\WhatsApp-Image-2025-05-13-at-15-22-54.jpeg
-wwwroot\resource\product-images\YOGII (1)-2.png
-wwwroot\resource\product-images\YOGII (1)-3.png
-wwwroot\resource\product-images\YOGII-1.png
+wwwroot\resource\file\1398917circleclosecrossincorrectinvalidicon.png
+wwwroot\resource\file\Adsiz-tasarim.png
+wwwroot\resource\file\delete.png
+wwwroot\resource\file\edit.png
+wwwroot\resource\file\edit-2.png
+wwwroot\resource\file\e-ticaretten-yazilimciya-yumusak-bir-gecis-kapak-fotografi-istiyorum-koyu-tema-olsun-sadece-olsun-canli-olmasin.jpg
+wwwroot\resource\file\Gorev-5---ER-Diyagrami.png
+wwwroot\resource\file\Gorev-6----Veritabani-Diyagrami.png
+wwwroot\resource\file\RestaurantCafeActivityDiagram.png
+wwwroot\resource\file\WhatsApp-Image-2025-03-14-at-16-11-33.jpeg
+wwwroot\resource\file\WhatsApp-Image-2025-05-13-at-15-22-54.jpeg
+wwwroot\resource\invoices\Gorev-6----Veritabani-Diyagrami.png
+wwwroot\resource\invoices\ProfessionalUMLActivityDiagram-1.png
+wwwroot\resource\invoices\RestaurantCafeActivityDiagram.png
+wwwroot\resource\product-images\gradient1000800.png
+wwwroot\resource\product-images\mypalette-1.png
+wwwroot\resource\product-images\mypalette-2.png
