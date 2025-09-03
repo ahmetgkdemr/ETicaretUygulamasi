@@ -1,17 +1,12 @@
-wwwroot\resource\file\1398917circleclosecrossincorrectinvalidicon.png
-wwwroot\resource\file\Adsiz-tasarim.png
-wwwroot\resource\file\delete.png
-wwwroot\resource\file\edit.png
-wwwroot\resource\file\edit-2.png
-wwwroot\resource\file\e-ticaretten-yazilimciya-yumusak-bir-gecis-kapak-fotografi-istiyorum-koyu-tema-olsun-sadece-olsun-canli-olmasin.jpg
-wwwroot\resource\file\Gorev-5---ER-Diyagrami.png
-wwwroot\resource\file\Gorev-6----Veritabani-Diyagrami.png
-wwwroot\resource\file\RestaurantCafeActivityDiagram.png
-wwwroot\resource\file\WhatsApp-Image-2025-03-14-at-16-11-33.jpeg
-wwwroot\resource\file\WhatsApp-Image-2025-05-13-at-15-22-54.jpeg
-wwwroot\resource\invoices\Gorev-6----Veritabani-Diyagrami.png
-wwwroot\resource\invoices\ProfessionalUMLActivityDiagram-1.png
-wwwroot\resource\invoices\RestaurantCafeActivityDiagram.png
-wwwroot\resource\product-images\gradient1000800.png
-wwwroot\resource\product-images\mypalette-1.png
-wwwroot\resource\product-images\mypalette-2.png
+wwwroot\resource\file\1.png
+wwwroot\resource\file\12 vs kodundaki bir bilgi-2.png
+wwwroot\resource\file\12 vs kodundaki bir bilgi-3.png
+wwwroot\resource\file\12-vs-kodundaki-bir-bilgi.png
+wwwroot\resource\file\13-kopyalanani-vs-coda-da-yapistir-girdi-kart-bilgilerini-duzenledi-.png
+wwwroot\resource\file\14-depozito-koduodeme-sayfasi-kodu-yeni-sekmede-acti-vs-daki-scripti-actigi-linkdeki-consola-yapistirdi.png
+wwwroot\resource\file\15-ve-onaylandi.png
+wwwroot\resource\file\2.png
+wwwroot\resource\file\3.png
+wwwroot\resource\file\4.png
+wwwroot\resource\file\5.png
+wwwroot\resource\file\6.png
