@@ -1,12 +1,16 @@
-wwwroot\resource\file\1.png
-wwwroot\resource\file\12 vs kodundaki bir bilgi-2.png
-wwwroot\resource\file\12 vs kodundaki bir bilgi-3.png
-wwwroot\resource\file\12-vs-kodundaki-bir-bilgi.png
-wwwroot\resource\file\13-kopyalanani-vs-coda-da-yapistir-girdi-kart-bilgilerini-duzenledi-.png
-wwwroot\resource\file\14-depozito-koduodeme-sayfasi-kodu-yeni-sekmede-acti-vs-daki-scripti-actigi-linkdeki-consola-yapistirdi.png
-wwwroot\resource\file\15-ve-onaylandi.png
-wwwroot\resource\file\2.png
-wwwroot\resource\file\3.png
-wwwroot\resource\file\4.png
-wwwroot\resource\file\5.png
-wwwroot\resource\file\6.png
+wwwroot\resource\files\wallpaperbetter.com_1920x1080 (1).jpg
+wwwroot\resource\files\wallpaperbetter.com_1920x1080.jpg
+wwwroot\resource\product-images\4.jpg
+wwwroot\resource\product-images\4-2.jpg
+wwwroot\resource\product-images\4-3.jpg
+wwwroot\resource\product-images\delete.png
+wwwroot\resource\product-images\delete-2.png
+wwwroot\resource\product-images\delete-3.png
+wwwroot\resource\product-images\IMG_6506-2.jpg
+wwwroot\resource\product-images\IMG_6506-3.jpg
+wwwroot\resource\product-images\IMG6506.jpg
+wwwroot\resource\product-images\WhatsApp Image 2025-05-13 at 15.22.54-2.jpeg
+wwwroot\resource\product-images\WhatsApp-Image-2025-05-13-at-15-22-54.jpeg
+wwwroot\resource\product-images\YOGII (1)-2.png
+wwwroot\resource\product-images\YOGII (1)-3.png
+wwwroot\resource\product-images\YOGII-1.png

@@ -14,5 +14,6 @@ namespace ETicaretAPI.Domain.Entities
         public float Price { get; set; }
 
         public ICollection<Order> Orders { get; set; } // Bir productın bir'den çok orderı olduğu anlama geliyor. 1 e n ilişki. Genel baktığımızda da n'e n
+        public ICollection<ProductImageFile> ProductImages { get; set; }
     }
 }

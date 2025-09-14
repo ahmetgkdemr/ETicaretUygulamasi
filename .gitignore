@@ -6,6 +6,7 @@
 /ETicaretClient/node_modules/
 /ETicaretClient/dist/
 
+
 # IDE / VS
 **/.vs/
 *.suo
@@ -17,3 +18,8 @@
 .vscode/
 .idea/
 *.log
+
+# App settings
+**/appsettings.json
+**/appsettings.*.json
+
