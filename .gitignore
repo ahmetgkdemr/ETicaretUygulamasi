@@ -23,3 +23,11 @@
 **/appsettings.json
 **/appsettings.*.json
 
+*.json
+*.json
+*.json
+ETicaretAPI/Presentation/ETicaretAPI.API/bin/Debug/net6.0/appsettings.json
+*.json
+*.json
+*.json
+*.json
