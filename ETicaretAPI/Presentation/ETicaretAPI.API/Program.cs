@@ -1,4 +1,5 @@
 //Benim IoC konteynýrým burada. ServiceRegistration içinde oluþturduðum servislerimi buradaki metodlardan çaðýrýyoruz. (ekliyoruz konteynýr içine) Controller da talep geldiðinde buradan oluþturuyor mesajlarý gibi düþün.
+using ETicaretAPI.Application;
 using ETicaretAPI.Application.Validators.Products;
 using ETicaretAPI.Infrastructure;
 using ETicaretAPI.Infrastructure.Filters;
@@ -12,6 +13,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddPersistenceServices();
 builder.Services.AddInfrastructureServices();
+builder.Services.AddApplicationServices();
 
 //builder.Services.AddStorage<LocalStorage>();
 builder.Services.AddStorage<AzureStorage>();

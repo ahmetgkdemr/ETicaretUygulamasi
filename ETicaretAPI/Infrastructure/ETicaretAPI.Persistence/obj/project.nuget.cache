@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "0P3UPS9qwvE=",
+  "dgSpecHash": "0ponisL6wgo=",
   "success": true,
   "projectFilePath": "C:\\Users\\gokde\\Desktop\\ETicaretUygulamasi\\ETicaretAPI\\Infrastructure\\ETicaretAPI.Persistence\\ETicaretAPI.Persistence.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,9 @@
     "C:\\Users\\gokde\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
     "C:\\Users\\gokde\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.11.0\\fluentvalidation.dependencyinjectionextensions.11.11.0.nupkg.sha512",
     "C:\\Users\\gokde\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\gokde\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
+    "C:\\Users\\gokde\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
+    "C:\\Users\\gokde\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\10.0.1\\mediatr.extensions.microsoft.dependencyinjection.10.0.1.nupkg.sha512",
     "C:\\Users\\gokde\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.2\\microsoft.entityframeworkcore.6.0.2.nupkg.sha512",
     "C:\\Users\\gokde\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.2\\microsoft.entityframeworkcore.abstractions.6.0.2.nupkg.sha512",
     "C:\\Users\\gokde\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.2\\microsoft.entityframeworkcore.analyzers.6.0.2.nupkg.sha512",
