@@ -71,17 +71,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/VM_Update_Product"
+                "$ref": "#/components/schemas/UpdateProductCommandRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/VM_Update_Product"
+                "$ref": "#/components/schemas/UpdateProductCommandRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/VM_Update_Product"
+                "$ref": "#/components/schemas/UpdateProductCommandRequest"
               }
             }
           }
@@ -93,15 +93,16 @@
         }
       }
     },
-    "/api/Products/id": {
+    "/api/Products/{Id}": {
       "get": {
         "tags": [
           "Products"
         ],
         "parameters": [
           {
-            "name": "id",
-            "in": "query",
+            "name": "Id",
+            "in": "path",
+            "required": true,
             "schema": {
               "type": "string"
             }
@@ -112,16 +113,14 @@
             "description": "OK"
           }
         }
-      }
-    },
-    "/api/Products/{id}": {
+      },
       "delete": {
         "tags": [
           "Products"
         ],
         "parameters": [
           {
-            "name": "id",
+            "name": "Id",
             "in": "path",
             "required": true,
             "schema": {
@@ -143,13 +142,36 @@
         ],
         "parameters": [
           {
-            "name": "id",
+            "name": "Id",
             "in": "query",
             "schema": {
               "type": "string"
             }
           }
         ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "Files": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "format": "binary"
+                    }
+                  }
+                }
+              },
+              "encoding": {
+                "Files": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
         "responses": {
           "200": {
             "description": "OK"
@@ -157,14 +179,14 @@
         }
       }
     },
-    "/api/Products/GetProductImages/{id}": {
+    "/api/Products/GetProductImages/{Id}": {
       "get": {
         "tags": [
           "Products"
         ],
         "parameters": [
           {
-            "name": "id",
+            "name": "Id",
             "in": "path",
             "required": true,
             "schema": {
@@ -179,14 +201,22 @@
         }
       }
     },
-    "/api/Products/DeleteProductImage/{id}": {
+    "/api/Products/DeleteProductImage/{Id}": {
       "delete": {
         "tags": [
           "Products"
         ],
         "parameters": [
           {
-            "name": "id",
+            "name": "Id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "ImageId",
             "in": "path",
             "required": true,
             "schema": {
@@ -229,7 +259,7 @@
         },
         "additionalProperties": false
       },
-      "VM_Update_Product": {
+      "UpdateProductCommandRequest": {
         "type": "object",
         "properties": {
           "id": {
