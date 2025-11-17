@@ -10,3 +10,4 @@ C:\Users\gokde\Desktop\ETicaretUygulamasi\ETicaretAPI\Core\ETicaretAPI.Domain\ob
 C:\Users\gokde\Desktop\ETicaretUygulamasi\ETicaretAPI\Core\ETicaretAPI.Domain\obj\Debug\net6.0\ETicaretAPI.Domain.pdb
 C:\Users\gokde\Desktop\ETicaretUygulamasi\ETicaretAPI\Core\ETicaretAPI.Domain\obj\Debug\net6.0\ref\ETicaretAPI.Domain.dll
 C:\Users\gokde\Desktop\ETicaretUygulamasi\ETicaretAPI\Core\ETicaretAPI.Domain\obj\Debug\net6.0\ETicaretAPI.Domain.sourcelink.json
+C:\Users\gokde\Desktop\ETicaretUygulamasi\ETicaretAPI\Core\ETicaretAPI.Domain\obj\Debug\net6.0\ETicaretAPI.Domain.csproj.AssemblyReference.cache

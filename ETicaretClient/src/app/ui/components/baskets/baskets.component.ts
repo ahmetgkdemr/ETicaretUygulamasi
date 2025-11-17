@@ -12,6 +12,6 @@ constructor(spinner: NgxSpinnerService){
   super(spinner)
 }
 ngOnInit(): void {
-  this.showSpinner(SpinnerType.BallAtom);
+  //this.showSpinner(SpinnerType.BallAtom);
 }
 }

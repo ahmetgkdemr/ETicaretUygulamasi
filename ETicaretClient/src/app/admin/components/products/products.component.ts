@@ -16,7 +16,6 @@ constructor(spinner: NgxSpinnerService, private httpClientService:HttpClientServ
 }
 
 ngOnInit(): void {
-  this.showSpinner(SpinnerType.BallAtom);
 }
 
 @ViewChild(ListComponent) listComponents : ListComponent;

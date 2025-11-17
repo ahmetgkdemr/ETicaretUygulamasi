@@ -11,6 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using ETicaretAPI.Persistence.Repositories;
 using ETicaretAPI.Application.Repositories;
+using ETicaretAPI.Domain.Entities.Identity;
 
 namespace ETicaretAPI.Persistence 
 {
@@ -21,7 +22,17 @@ namespace ETicaretAPI.Persistence
             //Her bir servisimi benim IoC kontreynırıma ekleyebilmem için buradaki extention metodu kullanmam yeterli olacaktır. 
             //Ancak benim buraya eklemem yeterli değil bunu enjekte edip kullanabilmem için benim bunu ASP.DotnetCore uygulaması tarafından çağrılması gerekir(Program.cs)
             //bunun içinde benim Presentationa Persistence için referans eklemem gerekiyor. Referance Manegentmentta)
+
+
             services.AddDbContext<ETicaretAPIDbContext>(options => options.UseNpgsql(Configuration.ConnectionString));
+            services.AddIdentity<AppUser, AppRole>(options =>
+            {
+                options.Password.RequiredLength = 3;
+                options.Password.RequireNonAlphanumeric = false;
+                options.Password.RequireDigit= false;
+                options.Password.RequireLowercase= false;
+                options.Password.RequireUppercase= false;
+            }).AddEntityFrameworkStores<ETicaretAPIDbContext>();
             services.AddScoped<ICustomerReadRepository, CustomerReadRepository>();
             services.AddScoped<ICustomerWriteRepository, CustomerWriteRepository>();
             services.AddScoped<IOrderReadRepository, OrderReadRepository>();

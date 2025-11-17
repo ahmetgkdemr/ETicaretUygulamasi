@@ -1,0 +1,18 @@
+<div class="row">  <!-- burada row 12 sütüna böler. 3 sol, 6 bizim code, 3 sağda boşluk  -->
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+       <div class="mb-3">
+                <label for="username">Kullanıcı Adı</label>
+                <input #txtUsernameOrEmail type="text" class="form-control" id="username" placeholder="Kullancı Adı & E-mail">
+                <small class="form-text text-muted invalid-syntax"></small>
+            </div>
+           
+            <div class="mb-3">
+                <label for="password">Şifre</label>
+                <input #txtPassword type="password" class="form-control" id="password" placeholder="Şifre">
+            </div>
+            
+            <button type="submit" class="btn btn-primary" (click)="login(txtUsernameOrEmail.value,txtPassword.value)" >Giriş Yap</button>  
+       </div>
+    <div class="col-md-3"></div>
+</div>

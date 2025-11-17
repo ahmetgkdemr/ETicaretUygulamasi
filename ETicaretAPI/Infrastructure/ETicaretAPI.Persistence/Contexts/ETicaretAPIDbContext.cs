@@ -1,7 +1,9 @@
 ﻿using ETicaretAPI.Application.Repositories;
 using ETicaretAPI.Domain.Entities;
 using ETicaretAPI.Domain.Entities.Common;
+using ETicaretAPI.Domain.Entities.Identity;
 using ETicaretAPI.Persistence.Contexts;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 using System;
@@ -13,7 +15,7 @@ using System.Threading.Tasks;
 
 namespace ETicaretAPI.Persistence.Contexts
 {
-    public class ETicaretAPIDbContext : DbContext     //NTT framework ORM sini kullanacağımız, veritabanına karşılık gelen Dbcontext kütüphanesinden gelir(core da olan kütüphane)
+    public class ETicaretAPIDbContext : IdentityDbContext<AppUser,AppRole,string>     //NTT framework ORM sini kullanacağımız, veritabanına karşılık gelen Dbcontext kütüphanesinden gelir(core da olan kütüphane DbContext)
     {
         public ETicaretAPIDbContext(DbContextOptions options) : base(options)
         {
