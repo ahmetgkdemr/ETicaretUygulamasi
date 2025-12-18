@@ -32,9 +32,9 @@ export class ProductService {
 //get post işlemlerinde genelde Observable döner, Observable veri geldiğinde bana haber ver tarzında bir sistemdir
 //subscribe ise veri geldiğinde şunu yap diyoruz. 
 
-  async read(page:number=0,size:number=5,successCallBack?:()=>void, errorCallBack?: (errorMessage:string)=>void) : Promise<{totalCount:number; products: List_Product[]}>{
-    const promiseData:Promise<{totalCount:number; products: List_Product[]}>= firstValueFrom(
-      this.httpClientService.get<{totalCount:number; products: List_Product[]}>({
+  async read(page:number=0,size:number=5,successCallBack?:()=>void, errorCallBack?: (errorMessage:string)=>void) : Promise<{totalProductCount:number; products: List_Product[]}>{
+    const promiseData:Promise<{totalProductCount:number; products: List_Product[]}>= firstValueFrom(
+      this.httpClientService.get<{totalProductCount:number; products: List_Product[]}>({
         controller:"products",
         queryString:`page=${page}&size=${size}`
       }))
@@ -74,8 +74,16 @@ export class ProductService {
     },id);
     
     await firstValueFrom(deleteObservable)
-    successCallBack();//33 son 5 dakikasında kaldın 12.09.2025 bir bak incele
+    successCallBack();
   }
 
+  async changeShowcaseImage(imageId: string,productId : string , successCallBack?:()=>void): Promise <void>{
+    const changeShowcaseImage: Observable<any>=await this.httpClientService.get({
+      controller:"products",
+      action:"changeshowcaseimage",
+      queryString:`imageId=${imageId}&productId=${productId}`
+    });
+    await firstValueFrom(changeShowcaseImage);
+    successCallBack();
+  }
 }
-//errorcallback?:any   errorcallback() ---->  Eğer bir hata olursa(hata şart değil) bana çalıştırabilmem için bir fonksiyon ver. ama vermesen de olur. 

@@ -5,6 +5,7 @@ import { NgxSpinnerService } from 'ngx-spinner';
 import { SpinnerType } from 'src/app/base/base.component';
 import { _isAuthenticated } from 'src/app/services/common/auth.service';
 import { AuthService } from 'src/app/services/common/auth.service';
+import { SocialAuthService } from '@abacritt/angularx-social-login';
 
 export const authGuard: CanActivateFn = (route, state) => {
   // const token: string =localStorage.getItem("accessToken");
@@ -13,7 +14,7 @@ export const authGuard: CanActivateFn = (route, state) => {
   const toastrService= inject(CustomToastrService)
   const spinner = inject(NgxSpinnerService)
   const authService=inject(AuthService)
-
+  const socialAuthService = inject(SocialAuthService);  
   spinner.show(SpinnerType.BallAtom);
 
    authService.identityCheck(); //bu mekanizma tokenın durumunu kontrol ediyor angular tarafında.
@@ -26,9 +27,19 @@ export const authGuard: CanActivateFn = (route, state) => {
   // }
   
   if(!_isAuthenticated){
-    router.navigate(["login"], {queryParams : { returnUrl: state.url}});
-    toastrService.message("Oturum açmanız gerekiyor.", "Yetkisiz erişim. ", {messageType : ToastrMessageType.Warning , position:ToastrPosition.TopRight})
+  socialAuthService.signOut(); // bu kodu ve alttaki return false ben ekledim çünkü sosyal giriş yaptıktan sonra token süresi dolarsa guardda takılıyordu kullanıcı logout olmuyordu. 
+  router.navigate(["login"], {queryParams : { returnUrl: state.url}});
+  toastrService.message(
+    "Oturum açmanız gerekiyor.",
+    "Yetkisiz erişim.",
+    { messageType : ToastrMessageType.Warning, position: ToastrPosition.TopRight }
+  );
+
+  spinner.hide(SpinnerType.BallAtom);
+
+  //return false;   //   ben ekledim
   }
+
 
   spinner.hide(SpinnerType.BallAtom);
   return true;

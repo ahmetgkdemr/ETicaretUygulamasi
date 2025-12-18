@@ -12,6 +12,9 @@ using System.Threading.Tasks;
 using ETicaretAPI.Persistence.Repositories;
 using ETicaretAPI.Application.Repositories;
 using ETicaretAPI.Domain.Entities.Identity;
+using ETicaretAPI.Application.Abstraction.Services;
+using ETicaretAPI.Persistence.Services;
+using ETicaretAPI.Application.Abstraction.Services.Authentications;
 
 namespace ETicaretAPI.Persistence 
 {
@@ -45,7 +48,16 @@ namespace ETicaretAPI.Persistence
             services.AddScoped<IProductImageFileWriteRepository, ProductImageFileWriteRepository>();
             services.AddScoped<IInvoiceFileReadRepository, InvoiceFileReadRepository>();   
             services.AddScoped<IInvoiceFileWriteRepository, InvoiceFileWriteRepository>();
-            
+            services.AddScoped<IBasketReadRepository, BasketReadRepository>();
+            services.AddScoped<IBasketWriteRepository, BasketWriteRepository>();
+            services.AddScoped<IBasketItemReadRepository, BasketItemReadRepository>();
+            services.AddScoped<IBasketItemWriteRepository, BasketItemWriteRepository>();
+
+            services.AddScoped<IUserService,UserService>();
+            services.AddScoped<IAuthService,AuthService>();
+            services.AddScoped<IExternalAuthentication,AuthService>();
+            services.AddScoped<IInternalAuthentication, AuthService>();   
+            services.AddScoped<IBasketService, BasketService>();
         }
     }
 }

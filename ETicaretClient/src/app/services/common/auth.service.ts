@@ -10,6 +10,7 @@ export class AuthService {
 
   identityCheck(){
     const token: string =localStorage.getItem("accessToken");
+    /*
     let expired : boolean;
   
     try {
@@ -17,8 +18,8 @@ export class AuthService {
     } catch {
       expired=true;
     }
-
-    _isAuthenticated = token!=null && !expired;
+    */
+    _isAuthenticated = token!=null ;//&& !expired;  //burada token null değilse ve token süresi dolmamışsa true döner yani kullanıcı oturum açmış demektir.
   }
   
   get isAuthenticated() : boolean {

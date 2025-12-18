@@ -27,6 +27,22 @@ namespace ETicaretAPI.Persistence.Contexts
         public DbSet<Domain.Entities.File> Files { get; set; }
         public DbSet <ProductImageFile> ProductImageFiles { get; set; }
         public DbSet<InvoiceFile> InvoiceFiles { get; set; }
+        public DbSet<Basket> Baskets{ get; set; }
+        public DbSet<BasketItem> BasketItems{ get; set; }
+
+        //birebir bir ilişki söz konusu olduğu için on modelmodelcreating metodu override edilecek
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            builder.Entity<Order>()
+                .HasKey(o=>o.Id);  //Order entitysinin primary key inin Id olduğunu belirtiyoruz
+
+            builder.Entity<Order>()
+                .HasOne(o=>o.Basket)//Order entitysinin bir Basket a sahip olduğunu belirtiyoruz
+                .WithOne(b=>b.Order)//Basket entitysinin de bir Order a sahip olduğunu belirtiyoruz
+                .HasForeignKey<Order>(o=>o.Id);//Order baskete bağımlı olduğu için foreign key i orderda belirtiyoruz yani order tablosunda orderID=basketID olacak
+
+            base.OnModelCreating(builder); //burada bir identity framework metodu override edildiği için base in onmodelcreating metodu çağrılır yoksa hata verir
+        }
 
 
         public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
@@ -49,3 +65,4 @@ namespace ETicaretAPI.Persistence.Contexts
     }
 }
 
+//Orn 1-1 bir iliskide kim kime bagimlidir sorusuna net cevap: Kim sonra geliyorsa, öncekine bagimlidir. Orn basket ve order arasında, once basket olur ardından order gelir. O halde order basket e bagimlidir. 

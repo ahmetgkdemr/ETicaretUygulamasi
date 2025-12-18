@@ -10,9 +10,14 @@
             <div class="mb-3">
                 <label for="password">Şifre</label>
                 <input #txtPassword type="password" class="form-control" id="password" placeholder="Şifre">
+            </div> 	
+            <div class="social-buttons">
+                <asl-google-signin-button></asl-google-signin-button>
+                <img src="../../../../assets/facebook (2).png" style="width: 32px; cursor:pointer" (click)="facebookLogin()" >
             </div>
-            
+            <br>
             <button type="submit" class="btn btn-primary" (click)="login(txtUsernameOrEmail.value,txtPassword.value)" >Giriş Yap</button>  
-       </div>
+            
+        </div>
     <div class="col-md-3"></div>
 </div>

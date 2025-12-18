@@ -1,8 +1,12 @@
+import { List_Product_Image } from "./list_product_image";
+
 export class List_Product{
-    id:number;
+    id:string;
     name:string;
     stock:number;
     price:number;
     createdDate:Date;
     updatedDate:Date;
+    productImages?:List_Product_Image[];
+    imagePath:string;
 }

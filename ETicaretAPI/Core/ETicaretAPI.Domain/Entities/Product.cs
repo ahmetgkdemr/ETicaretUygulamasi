@@ -15,5 +15,6 @@ namespace ETicaretAPI.Domain.Entities
 
         public ICollection<Order> Orders { get; set; } // Bir productın bir'den çok orderı olduğu anlama geliyor. 1 e n ilişki. Genel baktığımızda da n'e n navigation property diye geçer yani ilişkisel property
         public ICollection<ProductImageFile> ProductImages { get; set; }
+        public ICollection<BasketItem> BasketItems{ get; set; }
     }
 }
