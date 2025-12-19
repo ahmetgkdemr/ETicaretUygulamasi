@@ -37,7 +37,6 @@ async changeQuantity(object : any){
 
 async removeBasketItem(basketItemId : string){
   this.showSpinner(SpinnerType.BallAtom);
-  debugger;
   $("." + basketItemId).fadeOut(500, ()=> this.hideSpinner(SpinnerType.BallAtom));
   await this.basketService.remove(basketItemId);
 

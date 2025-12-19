@@ -18,11 +18,14 @@ import { JwtModule } from '@auth0/angular-jwt';
 import { LoginComponent } from './ui/components/login/login.component';
 import { FacebookLoginProvider, GoogleLoginProvider, GoogleSigninButtonModule, SocialAuthServiceConfig, SocialLoginModule } from '@abacritt/angularx-social-login';
 import { HttpErrorHandlerInterceptorService } from './services/common/http-error-handler-interceptor.service';
+import { DynamicLoadComponentDirective } from './directives/common/dynamic-load-component.directive';
+import { CdkTableModule } from "@angular/cdk/table";
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    DynamicLoadComponentDirective
   ],
   imports: [
     BrowserModule,
@@ -33,14 +36,15 @@ import { HttpErrorHandlerInterceptorService } from './services/common/http-error
     NgxSpinnerModule,
     HttpClientModule,
     JwtModule.forRoot({
-      config: {
-        tokenGetter : ()=> localStorage.getItem("accessToken"),
-        allowedDomains: ["localhost:7183"]
-      }
+        config: {
+            tokenGetter: () => localStorage.getItem("accessToken"),
+            allowedDomains: ["localhost:7183"]
+        }
     }),
     SocialLoginModule,
-    GoogleSigninButtonModule
-  ],
+    GoogleSigninButtonModule,
+    CdkTableModule
+],
   providers: [
     { provide:"baseUrl",useValue:"https://localhost:7183/api",multi:true},
     {provide: "SocialAuthServiceConfig",
