@@ -1,3 +1,4 @@
 export enum ReceiveFunctions {
-    ProductAddedMessageReveiceFunction="receiveProductAddedMessage"
+    ProductAddedMessageReveiceFunction="receiveProductAddedMessage",
+    OrderAddedMessageReveiceFunction="receiveOrderAddedMessage"
 }

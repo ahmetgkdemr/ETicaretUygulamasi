@@ -10,6 +10,6 @@ namespace ETicaretAPI.Domain.Entities
     public class Customer:BaseEntity
     {
         public string Name { get; set; } 
-        public ICollection<Order> Orders { get; set; } // Bir müşterinin birden fazla orderı olabilir 1 e n ilişki
+        //public ICollection<Order> Orders { get; set; } // Bir müşterinin birden fazla orderı olabilir 1 e n ilişki
     }
 }

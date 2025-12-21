@@ -47,6 +47,7 @@ import { CdkTableModule } from "@angular/cdk/table";
 ],
   providers: [
     { provide:"baseUrl",useValue:"https://localhost:7183/api",multi:true},
+    { provide:"baseSignarRUrl",useValue:"https://localhost:7183/",multi:true},
     {provide: "SocialAuthServiceConfig",
       useValue: {
         autoLogin: false,
