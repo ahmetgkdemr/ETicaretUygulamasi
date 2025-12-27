@@ -37,6 +37,10 @@ namespace ETicaretAPI.Persistence.Contexts
                 .HasKey(o=>o.Id);  //Order entitysinin primary key inin Id olduğunu belirtiyoruz
 
             builder.Entity<Order>()
+                .HasIndex(o => o.OrderCode)
+                .IsUnique();
+
+            builder.Entity<Order>()
                 .HasOne(o=>o.Basket)//Order entitysinin bir Basket a sahip olduğunu belirtiyoruz
                 .WithOne(b=>b.Order)//Basket entitysinin de bir Order a sahip olduğunu belirtiyoruz
                 .HasForeignKey<Order>(o=>o.Id);//Order baskete bağımlı olduğu için foreign key i orderda belirtiyoruz yani order tablosunda orderID=basketID olacak
