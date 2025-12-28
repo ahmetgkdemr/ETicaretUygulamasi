@@ -49,6 +49,22 @@
   },
   {
     "ContainingType": "ETicaretAPI.API.Controllers.AuthController",
+    "Method": "PasswordReset",
+    "RelativePath": "api/Auth/password-reset",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "passwordResetCommandRequest",
+        "Type": "ETicaretAPI.Application.Features.Commands.AppUser.PasswordReset.PasswordResetCommandRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ETicaretAPI.API.Controllers.AuthController",
     "Method": "RefreshTokenLogin",
     "RelativePath": "api/Auth/RefreshTokenLogin",
     "HttpMethod": "POST",
@@ -58,6 +74,22 @@
       {
         "Name": "refreshTokenLoginCommandRequest",
         "Type": "ETicaretAPI.Application.Features.Commands.AppUser.RefreshTokenLogin.RefreshTokenLoginCommandRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ETicaretAPI.API.Controllers.AuthController",
+    "Method": "VerifyResetToken",
+    "RelativePath": "api/Auth/verify-reset-token",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "verifyResetTokenCommandRequest",
+        "Type": "ETicaretAPI.Application.Features.Commands.AppUser.VerifyResetToken.VerifyResetTokenCommandRequest",
         "IsRequired": true
       }
     ],
@@ -377,12 +409,18 @@
   },
   {
     "ContainingType": "ETicaretAPI.API.Controllers.UsersController",
-    "Method": "ExampleMailTest",
-    "RelativePath": "api/Users",
-    "HttpMethod": "GET",
+    "Method": "UpdatePassword",
+    "RelativePath": "api/Users/update-password",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "updatePasswordCommandRequest",
+        "Type": "ETicaretAPI.Application.Features.Commands.AppUser.UpdatePassword.UpdatePasswordCommandRequest",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   }
 ]

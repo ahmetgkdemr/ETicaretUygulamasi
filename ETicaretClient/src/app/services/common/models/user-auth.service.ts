@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClientService } from '../http-client.service';
 import { CustomToastrService, ToastrMessageType, ToastrPosition } from '../../ui/custom-toastr.service';
 import { TokenResponse } from 'src/app/contracts/token/tokenResponse';
-import { firstValueFrom, Observable } from 'rxjs';
+import { firstValueFrom, observable, Observable } from 'rxjs';
 import { SocialUser } from '@abacritt/angularx-social-login';
 
 @Injectable({
@@ -81,6 +81,25 @@ export class UserAuthService {
         })
       }
       callBackFunction();
+    }
+
+    async passwordReset(email : string , callBackFunction?:()=>void){
+      const observable: Observable<any>=await this.httpClientService.post({
+        controller: "auth",
+        action: "password-reset"
+      }, {email :email});
+      await firstValueFrom(observable);
+      callBackFunction();
+    }
+
+    async verifyResetToken(resetToken : string, userId: string, callBackFunction?: ()=>void): Promise<boolean>{
+      const observable: Observable<any>=await this.httpClientService.post({
+        controller: "auth",
+        action: "verify-reset-token"
+      }, {resetToken : resetToken, userId : userId });
+      const state: boolean=await firstValueFrom(observable);
+      callBackFunction();
+      return state;
     }
 
 }
