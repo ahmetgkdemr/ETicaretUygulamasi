@@ -29,6 +29,7 @@ namespace ETicaretAPI.Persistence.Contexts
         public DbSet<InvoiceFile> InvoiceFiles { get; set; }
         public DbSet<Basket> Baskets{ get; set; }
         public DbSet<BasketItem> BasketItems{ get; set; }
+        public DbSet<ComplatedOrder> ComplatedOrders{ get; set; }
 
         //birebir bir ilişki söz konusu olduğu için on modelmodelcreating metodu override edilecek
         protected override void OnModelCreating(ModelBuilder builder)
@@ -44,6 +45,11 @@ namespace ETicaretAPI.Persistence.Contexts
                 .HasOne(o=>o.Basket)//Order entitysinin bir Basket a sahip olduğunu belirtiyoruz
                 .WithOne(b=>b.Order)//Basket entitysinin de bir Order a sahip olduğunu belirtiyoruz
                 .HasForeignKey<Order>(o=>o.Id);//Order baskete bağımlı olduğu için foreign key i orderda belirtiyoruz yani order tablosunda orderID=basketID olacak
+
+            builder.Entity<Order>()
+                .HasOne(o => o.ComplatedOrder)
+                .WithOne(co => co.Order)
+                .HasForeignKey<ComplatedOrder>(co => co.OrderId); //her zaman bağımlı olan entity de foreign key olur
 
             base.OnModelCreating(builder); //burada bir identity framework metodu override edildiği için base in onmodelcreating metodu çağrılır yoksa hata verir
         }

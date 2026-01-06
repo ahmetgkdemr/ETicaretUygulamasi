@@ -71,5 +71,5 @@
 </mat-dialog-content>
 <mat-dialog-actions align="end">
   <button matButton mat-dialog-close>Kapat</button>
-  <button matButton [mat-dialog-close]="data" cdkFocusInitial>Siparişi Tamamla</button>
+  <button matButton [mat-dialog-close]="data" cdkFocusInitial (click)="complateOrder()" *ngIf="!singleOrder.complated">Siparişi Tamamla</button>
 </mat-dialog-actions>

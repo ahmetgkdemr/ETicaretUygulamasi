@@ -223,6 +223,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "ETicaretAPI.API.Controllers.OrdersController",
+    "Method": "ComplateOrder",
+    "RelativePath": "api/Orders/complate-order/{Id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "ETicaretAPI.API.Controllers.ProductsController",
     "Method": "Get",
     "RelativePath": "api/Products",

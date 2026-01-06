@@ -39,4 +39,14 @@ export class OrderService {
     promiseData.then(value=> successCallBack()).catch(error=>errorCallBack(error));
     return await promiseData;
   }
+
+  async complateOrder(id: string) : Promise<void>{
+    const observable : Observable<any>= this.httpClientService.get({
+      controller: "orders",
+      action: "complate-order"
+    },id);
+
+    await firstValueFrom(observable);
+  }
+
 }

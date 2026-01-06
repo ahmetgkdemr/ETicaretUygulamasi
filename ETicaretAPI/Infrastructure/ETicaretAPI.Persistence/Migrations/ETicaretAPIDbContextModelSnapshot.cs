@@ -75,6 +75,29 @@ namespace ETicaretAPI.Persistence.Migrations
                     b.ToTable("BasketItems");
                 });
 
+            modelBuilder.Entity("ETicaretAPI.Domain.Entities.ComplatedOrder", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<Guid>("OrderId")
+                        .HasColumnType("uuid");
+
+                    b.Property<DateTime>("UpdatedDate")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("OrderId")
+                        .IsUnique();
+
+                    b.ToTable("ComplatedOrders");
+                });
+
             modelBuilder.Entity("ETicaretAPI.Domain.Entities.Customer", b =>
                 {
                     b.Property<Guid>("Id")
@@ -457,6 +480,17 @@ namespace ETicaretAPI.Persistence.Migrations
                     b.Navigation("Product");
                 });
 
+            modelBuilder.Entity("ETicaretAPI.Domain.Entities.ComplatedOrder", b =>
+                {
+                    b.HasOne("ETicaretAPI.Domain.Entities.Order", "Order")
+                        .WithOne("ComplatedOrder")
+                        .HasForeignKey("ETicaretAPI.Domain.Entities.ComplatedOrder", "OrderId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Order");
+                });
+
             modelBuilder.Entity("ETicaretAPI.Domain.Entities.Order", b =>
                 {
                     b.HasOne("ETicaretAPI.Domain.Entities.Basket", "Basket")
@@ -545,6 +579,12 @@ namespace ETicaretAPI.Persistence.Migrations
             modelBuilder.Entity("ETicaretAPI.Domain.Entities.Identity.AppUser", b =>
                 {
                     b.Navigation("Baskets");
+                });
+
+            modelBuilder.Entity("ETicaretAPI.Domain.Entities.Order", b =>
+                {
+                    b.Navigation("ComplatedOrder")
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("ETicaretAPI.Domain.Entities.Product", b =>

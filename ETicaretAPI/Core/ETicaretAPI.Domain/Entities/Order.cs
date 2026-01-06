@@ -18,5 +18,6 @@ namespace ETicaretAPI.Domain.Entities
 
         //public ICollection<Product> Products { get; set; }  //Veritabanı için bir orderın birden fazla product olduğunu temsil eder. 1 e n ilişki
         //public Customer Customer{ get; set; }
+        public ComplatedOrder ComplatedOrder { get; set; } 
     }
 }

@@ -18,7 +18,12 @@
   
       <ng-container matColumnDef="createdDate">
         <th mat-header-cell *matHeaderCellDef> Created Date </th>
-        <td mat-cell *matCellDef="let element"> {{element.createdDate}} </td>
+        <td mat-cell *matCellDef="let element"> {{element.createdDate | date:'dd.MM.yyyy HH:mm'}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="complated">
+        <th mat-header-cell *matHeaderCellDef width="30"></th>
+        <td mat-cell *matCellDef="let element"> <img *ngIf="element.complated" style="cursor:pointer;" src="..\..\..\..\assets\complated.png" width="48" height="auto"></td>
       </ng-container>
 
       <ng-container matColumnDef="viewdetail">
