@@ -1,5 +1,15 @@
 [
   {
+    "ContainingType": "ETicaretAPI.API.Controllers.ApplicationServicesController",
+    "Method": "GetAuthorizeDefinitionEndpoints",
+    "RelativePath": "api/ApplicationServices",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "ETicaretAPI.API.Controllers.AuthController",
     "Method": "FacebookLogin",
     "RelativePath": "api/Auth/facebook-login",
