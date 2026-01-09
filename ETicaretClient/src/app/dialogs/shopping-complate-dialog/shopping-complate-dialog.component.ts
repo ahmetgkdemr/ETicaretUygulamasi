@@ -23,10 +23,7 @@ export class ShoppingComplateDialogComponent extends BaseDialog<ShoppingComplate
     if (!this.show) {
         $("#basketModal").modal("show");
     }
-
-
   }
-
 }
 
 export enum ShoppingComplateState{

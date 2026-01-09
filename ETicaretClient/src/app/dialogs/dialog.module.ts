@@ -13,6 +13,8 @@ import { OrderDetailDialogComponent } from './order-detail-dialog/order-detail-d
 import { MatTableModule } from '@angular/material/table';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { ComplateOrderDialogComponent } from './complate-order-dialog/complate-order-dialog.component';
+import { AuthorizeMenuDialogComponent } from './authorize-menu-dialog/authorize-menu-dialog.component';
+import {MatBadgeModule} from '@angular/material/badge';
 
 @NgModule({
   declarations: [
@@ -21,12 +23,13 @@ import { ComplateOrderDialogComponent } from './complate-order-dialog/complate-o
     BasketItemRemoveDialogComponent,
     ShoppingComplateDialogComponent,
     OrderDetailDialogComponent,
-    ComplateOrderDialogComponent
+    ComplateOrderDialogComponent,
+    AuthorizeMenuDialogComponent
   ],
   imports: [
     CommonModule,
     MatDialogModule, MatButtonModule, MatCardModule, MatTableModule,MatToolbarModule,
-    FileUploadModule
+    FileUploadModule,MatBadgeModule
 ]
 })
 export class DialogModule { }
