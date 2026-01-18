@@ -7,3 +7,16 @@
 .demo-section + .demo-section {
   margin-top: 16px;
 }
+
+
+mat-selection-list {
+  width: 100%;
+}
+
+mat-list-option {
+  height: 48px !important;
+}
+
+mat-list-option:hover {
+  background-color: #f5f5f5;
+}

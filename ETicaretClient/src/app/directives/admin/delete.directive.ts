@@ -53,7 +53,7 @@ export class DeleteDirective {
             height: "toogle"
           },700,()=>{
             this.callback.emit() // 2- burada ben parenta yukarıda oluşturduğum eventi fırlatıyorum. ve html de callback çalışıyor
-            this.alertifyService.message("Ürün başarıyla silinmiştir.",{
+            this.alertifyService.message(`${this.controller == 'roles' ? 'Rol' : 'Ürün'} başarıyla silinmiştir.`,{
               dissmissOthers:true,
               messageType:MessageType.Success,
               position:Position.TopRight
