@@ -1,6 +1,7 @@
 //Benim IoC konteynýrým burada. ServiceRegistration içinde oluþturduðum servislerimi buradaki metodlardan çaðýrýyoruz. (ekliyoruz konteynýr içine) Controller da talep geldiðinde buradan oluþturuyor mesajlarý gibi düþün. 
 using ETicaretAPI.API.Configurations.ColumnWriters;
 using ETicaretAPI.API.Extensions;
+using ETicaretAPI.API.Filters;
 using ETicaretAPI.Application;
 using ETicaretAPI.Application.Validators.Products;
 using ETicaretAPI.Infrastructure;
@@ -63,7 +64,11 @@ builder.Services.AddHttpLogging(logging =>
     logging.ResponseBodyLogLimit = 4096;
 });
 
-builder.Services.AddControllers(options => options.Filters.Add<ValidationFilter>())
+builder.Services.AddControllers(options =>
+{
+    options.Filters.Add<ValidationFilter>();
+    options.Filters.Add<RolePermissionFilter>();
+})
     .ConfigureApiBehaviorOptions(options => options.SuppressModelStateInvalidFilter = true);
 
 builder.Services.AddFluentValidationAutoValidation();

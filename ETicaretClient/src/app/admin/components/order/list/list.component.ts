@@ -33,8 +33,8 @@ export class ListComponent extends BaseComponent{
     const all_orders:{totalOrderCount:number; orders: List_Order[]}= await this.orderService.getAllOrders(this.paginator? this.paginator.pageIndex:0,
       this.paginator? this.paginator.pageSize:5,()=>{
       this.hideSpinner(SpinnerType.BallAtom);
-    },(errorMessage)=>{
-      this.alertify.message(errorMessage,{
+    },(errorMessage :any)=>{
+      this.alertify.message(errorMessage.message,{
         dissmissOthers:true,
         messageType:MessageType.Error,
         position:Position.TopRight

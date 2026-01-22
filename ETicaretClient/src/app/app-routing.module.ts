@@ -20,7 +20,9 @@ const routes: Routes = [
     {path:"authorize-menu",loadChildren: ()=>import("./admin/components/authorize-menu/authorize-menu.module").then
       (module=>module.AuthorizeMenuModule),canActivate : [authGuard]},
     {path:"roles",loadChildren: ()=>import("./admin/components/role/role.module").then
-      (module=>module.RoleModule),canActivate : [authGuard]}
+      (module=>module.RoleModule),canActivate : [authGuard]},
+    {path:"users",loadChildren: ()=>import("./admin/components/user/user.module").then
+      (module=>module.UserModule),canActivate : [authGuard]}
   ],canActivate : [authGuard]
   },
   {path:"",component:HomeComponent},

@@ -18,8 +18,6 @@ intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> 
       switch (error.status) {
         case HttpStatusCode.Unauthorized:
 
-
-          
           this.userAuthService.refreshTokenLogin(localStorage.getItem("refreshToken"), (state) => {
             if(!state){
               const url= this.router.url;
@@ -34,7 +32,10 @@ intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> 
             }
             this.spinner.hide(SpinnerType.BallAtom);
           }).then(data => {
-            
+            this.toastrService.message("Bu işlemi yapmaya yetkiniz bulunmamaktadır!", "Yetkisiz işlem!", {
+                  messageType: ToastrMessageType.Warning,
+                  position: ToastrPosition.BottomFullWidth
+                });  
           }).catch(err => {
             
           });

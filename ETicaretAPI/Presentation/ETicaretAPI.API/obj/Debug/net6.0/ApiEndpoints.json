@@ -557,6 +557,59 @@
   },
   {
     "ContainingType": "ETicaretAPI.API.Controllers.UsersController",
+    "Method": "GetAllUser",
+    "RelativePath": "api/Users",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Size",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ETicaretAPI.API.Controllers.UsersController",
+    "Method": "AssignRoleToUser",
+    "RelativePath": "api/Users/assign-role-to-user",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "assignRoleToUserCommandRequest",
+        "Type": "ETicaretAPI.Application.Features.Commands.AppUser.AssignRoleToUser.AssignRoleToUserCommandRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ETicaretAPI.API.Controllers.UsersController",
+    "Method": "GetRolesToUser",
+    "RelativePath": "api/Users/get-roles-to-user/{UserId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "UserId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ETicaretAPI.API.Controllers.UsersController",
     "Method": "UpdatePassword",
     "RelativePath": "api/Users/update-password",
     "HttpMethod": "POST",
